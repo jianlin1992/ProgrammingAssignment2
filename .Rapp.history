@@ -1,0 +1,288 @@
+num_vect <- vector(c(0.5,55,-10, 6), length=10)
+num_vect <- c(0.5,55,-10, 6)
+tf <- num_vect<1
+tf
+num_vect>=6
+my_char <- c("My", "name", "is")
+my_cahr
+my_char
+paste(my_char, collapse = " ")
+c (my_char, Jay)
+c (my_char, "Jay")
+my_name <- c (my_char, "Jay")
+my_name
+paste (my_name, collapse=" ")
+paste ("Helllo", "world", sep = " ")
+paste ("Hello", "world", sep = " ")
+paste ("Hello", "world!", sep = " ")
+paste (1:3, c("X", "Y", "C"), sep="")
+paste (1:3, c("X", "Y", "Z"), sep="")
+paste(LETTERS, c(1:4), sep="-")
+paste(LETTERS, 1:4, sep="-")
+x <- c (44,NA,5,NA)
+x*3
+y <- rnom(1000)
+y <- rnorm(1000)
+z<-rep(NA,1000)
+my_data <- sample(c(y,z),100)
+my_data
+y
+my_na <- is.na(my_data)
+my_na
+my_data == NA
+sum(my_na)
+my_data
+0/0
+Inf-Inf
+x
+x[1:10]
+x[is.na(x)]
+y <- x[!is.na(x)]
+y
+y[y>0]
+x[x>0]
+x[!is.na(x) & x>0]
+x[c(3,5,7)]
+x[0]
+x[3000]
+x[c(-2,-10)]
+x[-c(2,10)]
+vect <- c(foo = 11, bar = 2, norf = NA)
+vect
+names(vect)
+vect2 <- c(11,2,NA)
+names(vect2) <- c("foo","bar","norf")
+identical(vect, vect2)
+vect["bar"]
+vect[c("foo","bar")]
+my_vector <- 1:2
+my_vector <- 1:20
+my_vector
+dim(my_vector)
+lenght(my_vector)
+lenghth(my_vector)
+length(my_vector)
+dim(my_vector) <- c(4,5)
+dim (my_vector)
+attributes(my_vector)
+my_vector
+class(my_vector)
+my_matrix <- my_vector
+?matrix
+my_matrix2 <- matrix (c(1:20),nrow=4, ncol=5)
+identical (my_matrix, my_matrix2)
+patients <- c("Bill","Gina","Kelly","Sean")
+cbind(patients, my_matrix2)
+cbind(patients, my_matrix)
+my_data <- data.frame(patients, my_matrix)
+my_data
+class(my_data)
+cnames <- c(""patient", "age", "weight", "bp", "rating", "test"")
+cnames <- c("patient", "age", "weight", "bp", "rating", "test"")
+cnames <- c("patient", "age", "weight", "bp", "rating", "test")
+colnames(my_data) <- cnames
+my_data
+bye()
+swirl
+swirl()
+bye()
+swirl()
+T == T
+TRUE == TRUE
+(FALSE == TRUE) == FALSE
+6 == 7
+6 < 7
+10 <= 10
+5 !=7
+!(5==7)
+!5==7
+FALSE & FALSE
+TRUE & c(TRUE, FALSE, FALSE)
+TRUE && c(TRUE, FALSE, FALSE)
+TRUE | c(TRUE, FALSE, FALSE)
+TRUE || c(TRUE, FALSE, FALSE)
+5 > 8 || 6 != 8 && 4 > 3.9
+isTRUE(6>4)
+identical ('twins','twins')
+xor(5 == 6, !FALSE)
+ints <- sample(10)
+ints
+ints>5
+which(ints>7)
+any(ints<0)
+all(ints>0)
+2
+bye()
+swirl()
+head(flags)
+dim(flags)
+class(flags)
+class(flags[,1])
+class(flags[1,])
+class(flags[6,])
+class(flags[,6])
+cls_list <- lapply(flags, class)
+cls_list
+class(cls_list)
+as.character(cls_list)
+cls_vect <- sapply(flags, class)
+class(cls_vect)
+sum(flags$orange)
+flag_colors <- flags[,11:17]
+head(flag_colors)
+lapply(flag_colors, sum)
+sapply(flag_colors, sum)
+sapply(flag_colors, mean)
+flag_shapes <- flags[, 19:23]
+lapply(flag_shapes, range)
+shape_mat <- sapply(flag_shapes, range)
+shape_mat
+class(shape_mat)
+unique(c(3, 4, 5, 5, 5, 6, 6))
+unique_vals <- lapply(flags, unique)
+unique_vals
+lapply(unique_vals, length)
+sapply(unique_vals, length)
+sapply(flags, unique)
+lapply(unique_vals, function(elem) elem[2])
+swirl()
+library(swirl)
+swirl()
+sapply(flags, unique)
+vapply(flags, unique, numeric(1))
+ok()
+sapply(flags, class)
+vapply(flags, class, character(1))
+?tapply
+table(flags$landmass)
+flags$landmass
+table(flags$animate)
+tapply(flags$animate, flags$landmass, mean)
+tapply(flags$population, flags$red, summary)
+tapply(flags$population, flags$landmasses, summary)
+tapply(flags$population, flags$landmass, summary)
+ls
+ls()
+class(plants)
+dim(plants)
+nrow(plants)
+ncol(plants)
+object.size(plants)
+names(plants)
+head(plants)
+head(plants, 10)
+tail(plants, 15)
+summary(plants)
+table(plants$Active_Growth_Period)
+str(plants)
+add2 <- function(x,y){#
+	x+y#
+}
+add2(3+5)
+add2(3,5)
+above10 <- function (x){#
+	use <- x >10#
+	x[use]#
+}
+above10(vector(1:8, 10:13))
+above10(c(1:8, 10:13))
+above10(c(7:14, 12:16))
+columnmeans <- function (y){#
+	nc <- ncol(y)#
+	means <- numeric (nc)#
+	for (i in 1:nc){#
+		means[i] <- mean(y[,i])#
+	}#
+	means#
+}
+columnmeans(airquality)
+test <- matrix (c(1:6,10:16),2,6)
+test <- matrix (c(1:6,11:16),2,6)
+test
+test <- matrix (c(1:6,11:16),6,2)
+test
+columnmeans(test)
+test <- matrix (1:6, 2,3)
+test
+columnmeans <- function (y, removeNA = TRUE){#
+	nc <- ncol(y)#
+	means <- numeric (nc)#
+	for (i in 1:nc){#
+		means[i] <- mean(y[,i])#
+	}#
+	means#
+}
+columnmeans(airquality)
+columnmeans(airquality, TRUE)
+columnmeans <- function (y, removeNA = TRUE){#
+	nc <- ncol(y)#
+	means <- numeric (nc)#
+	for (i in 1:nc){#
+		means[i] <- mean(y[,i], na.rm= removeNA)#
+	}#
+	means#
+}
+columnmeans(airquality)
+x <- array(rnom(2*2*10),c(2,2,10))
+x <- array(rnorm(2*2*10),c(2,2,10))
+x
+?array()
+?rowMeans()
+rowMeans(x, dims=2)
+rowMeans(x, dims=1:2)
+rowMeans(x, dims=c(1:2))
+rowMeans(x, dims=1)
+?rowMeans()
+x <- rnorm(10)
+f1 <- gl(2,5)
+f2 <- gl(5,2)
+interaction(f1,f2)
+split(x, list(f1,f2))
+split(x, interaction(f1,f2))
+f1
+f2
+x <<- 1
+x
+x
+x
+x <-2
+x
+makeVector <- function(x = numeric()) {#
+        m <- NULL#
+        set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }#
+        get <- function() x#
+        setmean <- function(mean) m <<- mean#
+        getmean <- function() m#
+        list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)#
+}
+tester <- makeVector(1:10)
+tester
+tester$getmean()
+tester$setmean(6.5)
+tester$getmean()
+source("cachematrix.R")
+x <- makeCacheMatrix
+x <- makeCacheMatrix (1:10)
+tester$get
+tester$get()
+x$get()
+?matrix()
+x$set(matrix(rep(1:3),5,5))
+x$set(matrix(rep(1:5),5,5))
+x$get()
+vmatrix <- cacheSolve(x)
+tester <- c(c(1,0,0),c(0,1,0), c(-4,0,1))
+tester
+tester <- c(c(1,0,0, 0,1,0, -4,0,1), 3,3)
+tester
+tester <- matrix(c(1,0,0, 0,1,0, -4,0,1), 3,3)
+tester
+x$set(matrix(c(1,0,-4, 0,1,0, 0,0,1), 3,3))
+vmatrix <- cacheSove(x)
+vmatrix <- cacheSolve(x)
+vmatrix
